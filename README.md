@@ -17,8 +17,8 @@ You can use [POSTMAN](https://www.getpostman.com/) or anything else for simulate
 1) GET -> http://localhost/currencyfair/getAuthToken
 2) POST -> http://localhost/currencyfair/consumer
 
-# Working:
-## Message Consumption:
+# Working
+## Message Consumption
 To post Consumer API, An auth token is required which uses basic auth with username:admin and password:admin123.
 A token is generated which is valid for 5 minutes from the time of first creation.
 Once, Auth token is recieved. Consumer API will require that auth token and user_id param(currently set as '1') as headers with below mentioned request params in content-type = JSON.
