@@ -18,10 +18,11 @@ You can use [POSTMAN](https://www.getpostman.com/) or anything else for simulate
 2) POST -> http://localhost/currencyfair/consumer
 
 # Working:
--- Message Consumption:
+## Message Consumption:
 To post Consumer API, An auth token is required which uses basic auth with username:admin and password:admin123.
 A token is generated which is valid for 5 minutes from the time of first creation.
 Once, Auth token is recieved. Consumer API will require that auth token and user_id param(currently set as '1') as headers with below mentioned request params in content-type = JSON.
+
  `{
 "userId": "1",
 "currencyFrom": "EUR",
@@ -33,11 +34,11 @@ Once, Auth token is recieved. Consumer API will require that auth token and user
 "originatingCountry" : "FR"
 }`
 
--- Message Processor
+## Message Processor
 Takes the message from consumption API and saves it to database.
 
--- Message frontend
+## Message frontend
 Open BaseUrl of project, It will redirect to the frontend controller that shows the list of all transactions by a particular user in real time.
 
 
-# For futher clarifications please find the images attached under folder screenshots.
+### For futher clarifications please find the images attached under folder screenshots.
